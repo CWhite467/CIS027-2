@@ -1,0 +1,101 @@
+/*
+Hand Coded by Collette White 381212 [1620014]
+Web Development 2017-2018 Ruth Tippel 
+
+The CSS for the Gallery HTML Document "Gallery.html" for the Website 
+*/
+
+/* Reset Browser styles */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    vertical-align: baseline;
+    color: black;
+}
+/* HTML5 display-role reset for older browsers to reduce visual impact from incompatibility */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+h2 { font-size: 2.1em; }
+a { text-decoration: none; }
+
+button {
+    padding: 1em;
+    cursor: pointer;
+    background: #983333;
+    color: white;
+}
+button:hover { background-color: #c9302c; }
+
+/* Utility classes */
+.sticky-bottom {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.back-to-top {
+    padding: 1.14em;
+    color: white;
+    background: #983333;
+    position: fixed;
+    bottom: 0;
+    Right: 0;
+}
+
+.hide { display: none; }
+/* These classes will be called upon for styling parts of the webpage */
+/* Navigation and Menu */
+/* Menu you background colour */
+nav.navigation {
+    background: #00000085;
+}
+/* Menu order and seating i.e. row/column */
+nav.navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+/* styling for all Items */
+nav.navigation ul li {
+    width: 6%;
+    padding: 12px;
+    margin: 6px;
+    text-align: center;
+    
+}
+/* hover over effect for All Items */
+nav.navigation ul li:hover {
+    background: #000000ab;
+}
+/* Colour of text All Items */
+nav.navigation ul li a {
+    color: white;
+}
+div.Gallery__section{
+		background: #000000ab;
+		margin: 0;
+	}
+div.thumbnails img {
+		height: 80px;
+		border: 4px solid #555;
+		padding: 1px;
+		margin: 0 10px 10px 0;
+	}
+
+div.thumbnails img:hover {
+		border: 4px solid #00ccff;
+		cursor:pointer;
+	}
+
+div.preview img {
+		border: 4px solid #444;
+		padding: 1px;
+		width: 800px;
+	}

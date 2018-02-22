@@ -1,0 +1,120 @@
+<!-- Hand Coded by Collette White 381212 [1620014] -->
+<!-- Web Development 2017-2018 Ruth Tippel -->
+
+<!-- The Script Gallery HTML Document for the Website-->
+
+<!-- Declaration of Document Type -->
+<!DOCTYPE html>
+<!-- Declaration of Default Language -->
+<html lang="en">
+
+<!-- Top Head Section of the Page -->
+<head>
+
+    <!-- Meta Values for Viewport Adaptability and Browser Refresh -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Window/Pages title seen at top of the Window -->
+    <title>Collette White [381212] Web Design - W3 Standards</title>
+    
+    <!-- Linked CSS Style sheet for this specific Page -->
+    <link rel="stylesheet" href="css/Gallerystyle.css" type="text/css">
+
+    <!-- Accessibility options, top right of Page, also scripted to act on Click in JavaScript -->
+    <!-- The Script tags for these options can be found lower down the page -->
+    <p style="text-align:right">Accessibility Options:   
+        <button onclick="IncreaseFont()"> T+ </button>
+        <button onclick = "ResetFont()"> Tt </button>
+        <button onclick="DecreaseFont()"> T- </button>
+        <button onclick="PrintPage()"> Print </button>
+    </p>
+</head>
+
+<!-- Main body Section of the Page -->
+<body>
+    
+    <!-- Navigation Menu and it's Items with Links -->
+    <nav class="navigation sticky-bottom">
+        <ul>
+            <li>
+                <a href="..\test\index.html">Home</a>
+            </li>   
+            <li>
+                <a href="..\test\webstandards.html">Webstandards</a>
+            </li>
+            <li>
+                <a href="..\test\html.html">HTML Coding</a>
+            </li>
+            <li>
+                <a href="..\test\css.html">CSS</a>
+            </li>
+            <li>
+                <a href="..\test\java.html">JavaScript</a>
+            </li>
+            <li>
+                <a href="..\test\Gallery.html">Script Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Gallery Page Section of the Page -->
+    <div class="gallery__section" align="center">
+        <h2>SCRIPT GALLERY</h2>
+        <br>
+        <h3>Simple HTML Photo Gallery with JavaScript to show coding</h3>
+        <br>
+
+        <!-- Thumbnails Divider of Gallery Section of the Page -->
+        <div class="thumbnails">
+
+            <!-- Each Thumbnail will appear in the preview when the Mouse hovers over the image -->
+            <img onmouseover="getElementById('preview').src=getElementById('img1').src" id="img1" src="..\test\img\Gallery\img1.jpg" alt="" title="Index Page Code" />
+            <img onmouseover="getElementById('preview').src=getElementById('img2').src" id="img2" src="..\test\img\Gallery\img2.jpg" alt="" title="WebStandards Page Code" />
+            <img onmouseover="getElementById('preview').src=getElementById('img3').src" id="img3" src="..\test\img\Gallery\img3.jpg" alt="" title="HTML Page Code" />
+            <img onmouseover="getElementById('preview').src=getElementById('img4').src" id="img4" src="..\test\img\Gallery\img4.jpg" alt="" title="Index Page CSS Code" />
+            <img onmouseover="getElementById('preview').src=getElementById('img5').src" id="img5" src="..\test\img\Gallery\img5.jpg" alt="" title="Example of JavaScript" />
+        </div>
+
+        <!-- The Picture Preview Divider of Gallery -->
+        <div class="preview" align="center">
+
+            <!-- The Picture Preview is determined by the Image selected or hovered over -->
+            <img id="preview" src="..\test\img\Gallery\img1.jpg" alt="" onclick="notesoncode()"/ >
+        </div>
+    </div> 
+
+    <!-- JavaScript Script Tag Section -->
+    <!-- Any remaining JavaScript is declared here as per standard practice -->
+    <script>
+        function notesoncode() {                                                                            //Information about the Pictures appear in a Pop Up Box
+            alert("This image shows the raw code to design the webpage. Notes and details on the Code can be found within the Website Report or by opening the page using Notepad");
+        }
+        function IncreaseFont() {                                                                           //Declaring the Function name "IncreaseFont" to Increase the size of the Text
+            document.body.style.fontSize = "xx-large";                                                      //Selects and edits the size of Text of the Entire Webpage's Body
+        }
+        function DecreaseFont() {                                                                           //Declaring the Function name "DecreaseFont" to reduce the size of the Text
+            document.body.style.fontSize = "xx-small";                                                      //Selects and edits the size of Text of the Entire Webpage's Body
+        }
+        function ResetFont(){                                                                               //Declaring the Function name "ResetFont" to return the Text to normal
+            document.body.style.fontSize = "medium";                                                        //Selects and edits the size of Text of the Entire Webpage's Body
+        }
+        function PagePrint() {                                                                              //Declaring the Function name "PagePrint" to Print out the Page
+            window.print();                                                                                 //Snapshots and open default printer to print Entire Webpage
+        }
+        </script>
+
+        <!-- Footer Section -->
+        <!-- Often used for Copyright or License information -->
+        <footer>
+            <div><small>2017 &copy; Designed by Collette White</small></div>
+        </footer>
+        
+        <!-- Back to Top -->
+        <!-- Allows the user to return to the top of the Page using the Arrow on the bottom right of the Page -->
+        <a class="back-to-top" href="#home">
+            &#8593;
+        </a>
+    </body>
+</html>

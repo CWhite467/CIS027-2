@@ -1,0 +1,191 @@
+/*
+Hand Coded by Collette White 381212 [1620014]
+Web Development 2017-2018 Ruth Tippel 
+
+The CSS for the HTML HTML Document "html.html" for the Website 
+*/
+
+/* Reset Browser styles */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    vertical-align: baseline;
+    color: black;
+}
+/* HTML5 display-role reset for older browsers to reduce visual impact from incompatibility */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+h2 { font-size: 2.1em; }
+a { text-decoration: none; }
+
+button {
+    padding: 1em;
+    cursor: pointer;
+    background: #983333;
+    color: white;
+}
+button:hover { background-color: #c9302c; }
+
+/* Utility classes */
+.sticky-bottom {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.back-to-top {
+    padding: 1.14em;
+    color: white;
+    background: #983333;
+    position: fixed;
+    bottom: 0;
+    Right: 0;
+}
+
+.hide { display: none; }
+/* These classes will be called upon for styling parts of the webpage */
+
+/* Navigation and Menu */
+/* Menu you background colour */
+nav.navigation {
+    background: #00000085;
+}
+/* Menu order and seating i.e. row/column */
+nav.navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+/* styling for all Items */
+nav.navigation ul li {
+    width: 6%;
+    padding: 12px;
+    margin: 6px;
+    text-align: center;
+    
+}
+/* hover over effect for All Items */
+nav.navigation ul li:hover {
+    background: #000000ab;
+}
+/* Colour of text All Items */
+nav.navigation ul li a {
+    color: white;
+}
+
+/* Multiple Section styling */
+section .web-standard__section-container,
+section .w3-consort__section-container,
+section .web-validate__section-container,
+section .web-aspect__section-container,
+section .additional__section-container,
+section .contact__section-container {
+    width: 40%;
+    margin: 0 15% auto;
+    padding: 1%;
+    background: #ffffff52;
+}
+
+div.web-standard__section-container > div.header-container,
+div.w3-consort__section-container > div.header-container,
+div.web-validate__section-container > div.header-container,
+div.web-aspect__section-container > div.header-container {
+    width: 50%;
+    margin: 5% 0;
+}
+
+div.info-container p {
+    margin: 5% 0;
+    line-height: 1.2;
+}
+/* This sets the default formatting values for each section in the page */
+
+section .w3-consort__section-container,
+section .web-aspect__section-container,
+section .contact__section-container {
+    margin: 0 50% auto;
+}
+/* This sets the format for each section which appears to the right on the page */
+
+/* Specific Styling for Each Section */
+/* Web Standard Section */
+section.web-standard__section {
+    background: url('../img/bg-html-01.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* Consortium Section */
+section.w3-consort__section {
+    background: url('../img/bg-html-02.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* Validation Section */
+section.web-validate__section {
+    background: url('../img/bg-html-03.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* Web Aspect Section */
+section.web-aspect__section {
+    background: url('../img/bg-html-04.jpg') no-repeat center;
+    background-size: cover;
+}
+section.web-aspect__section > div.web-aspect__section-container div.info-container ul {
+    width: 50%;
+    margin: 3% 7%;
+    line-height: 1.2;
+    list-style: square;
+}
+
+section.web-aspect__section > div.web-aspect__section-container > div.header-container p:last-child {
+    margin: 2.5% 0;
+    line-height: 1;
+}
+/* Additional Information Section */
+section.additional__section {
+    background: url('../img/bg-html-05.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* Contact Us Section */
+section.contact__section {
+    background: url('../img/bg-contact.jpg') no-repeat center;
+    background-size: cover;
+}
+
+section.contact__section-container > div.header-container{
+    background: #ffffff8a;
+}
+section .contact__section-container > div.info-container form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 5% 0;    
+}
+
+section .contact__section-container > div.info-container form input,
+section .contact__section-container > div.info-container form textarea  {
+    padding: 1em;
+    border: 1px solid #ffffff2b;
+    margin: 2.5% 0;
+    background: transparent;
+}
+
+section .contact__section-container > div.info-container form input::placeholder,
+section .contact__section-container > div.info-container form textarea::placeholder {
+    color: #FFF;
+}
+
+/* Footer Section */
+footer {
+    padding: 1.11em;
+    text-align: right;
+    background-color: #292727de
+}

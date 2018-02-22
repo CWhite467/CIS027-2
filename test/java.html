@@ -1,0 +1,284 @@
+<!-- Hand Coded by Collette White 381212 [1620014] -->
+<!-- Web Development 2017-2018 Ruth Tippel -->
+
+<!-- The JavaScript HTML Document for the Website-->
+
+<!-- Declaration of Document Type -->
+<!DOCTYPE html>
+<!-- Declaration of Default Language -->
+<html lang="en">
+
+<!-- Top Head Section of the Page -->
+<head>
+
+    <!-- Meta Values for Viewport Adaptability and Browser Refresh -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Window/Pages title seen at top of the Window -->
+    <title>Collette White [381212] Web Design - W3 Standards</title>
+    
+    <!-- Linked CSS Style sheet for this specific Page -->
+    <link rel="stylesheet" href="css/jsstyle.css" type="text/css">
+
+    <!-- Accessibility options, top right of Page, also scripted to act on Click in JavaScript -->
+    <!-- The Script tags for these options can be found lower down the page -->
+    <p style="text-align:right">Accessibility Options:   
+        <button onclick="IncreaseFont()"> T+ </button>
+        <button onclick = "ResetFont()"> Tt </button>
+        <button onclick="DecreaseFont()"> T- </button>
+        <button onclick="PrintPage()"> Print </button>
+    </p>
+</head>
+
+<!-- Main body Section of the Page -->
+<body>
+    
+    <!-- Navigation Menu and it's Items with Links -->
+    <nav class="navigation sticky-bottom">
+        <ul>
+            <li>
+                <a href="..\test\index.html">Home</a>
+            </li>   
+            <li>
+                <a href="..\test\webstandards.html">Webstandards</a>
+            </li>
+            <li>
+                <a href="..\test\html.html">HTML Coding</a>
+            </li>
+            <li>
+                <a href="..\test\css.html">CSS</a>
+            </li>
+            <li>
+                <a href="..\test\java.html">JavaScript</a>
+            </li>
+            <li>
+                <a href="..\test\Gallery.html">Script Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Information Section of the Page with section name and Id for easy linking -->
+    <section class="web-standard__section" id="home">
+        <div class="web-standard__section-container">
+            <div class="header-container">
+                <h2>What is JavaScript?</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                    Java Script is used to enhance the way website behaves and is interacted with. It is supported by a range of browsers such
+                    as; Chrome, Firefox, Safari, Edge/internet Explorer and a range of other browsers including Mobile phone browsers. 
+                </p>
+
+                <p>
+                    JavaScript improves the users experience of a web page by using dynamic component features making the most of the website's 
+                    elements via programming.
+                </p>
+
+                <p>
+                    how it works is the web browser loads up a web page, analyses and deconstructs the HTML to outline the website descriptors 
+                    and creates a Document Object Model (DOM) from the loaded contents. The JavaScript code, in order to be presented to the user 
+                    successfully, makes updates to the DOM live. This way it will also allow the ability to adjust your code live, to be notified 
+                    on user interface events such as mouse clicks, button pressed, etc.
+                </p>
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href="#jshist"><button type="button">History of JavaScript</button></a>
+        </div>
+    </section>
+
+    <!-- Information Section of the Page with section name and Id for easy linking -->
+    <section class="w3-consort__section" id="jshist">
+        <div class="w3-consort__section-container">
+            <div class="header-container">
+                <h2>JavaScript History</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                    Netscape Communications started development of JavaScript in 1995 for use with their own Netscape browser. It was only 
+                    when Netscape included Brendan Eich into the development project when the language was embedded. heavily inspired by Java 
+                    syntax, and the inclusion of features of object orientation programs such as "SmallTalk", JavaScript was born. Although 
+                    originally called "Mocha", May 1995, and then LiveScript, September 1995, it did not receive it's current name "JavaScript" 
+                    until December in 1995.
+                </p>
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href="#jshow"><button type="button">How does it work?</button></a>
+        </div>
+    </section>
+
+    <!-- Information Section of the Page with section name and Id for easy linking -->
+    <section class="web-validate__section" id="jshow">
+        <div class="web-validate__section-container">
+            <div class="header-container">
+                <h2>How JavaScript Works</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                     The browser begins a parser Process which first starts going through the HTML code to create the previously 
+                     mentioned DOM. Whilst the parser is analysing the HTML document, the DOM is updated with the live view of the 
+                     webpage including any triggers for any encounters of CSS and JavaScript. When the parser encounters any internal 
+                     or external loaded CSS or JavaScript directives it will be passed on to the relevent parser. 
+
+                </p>
+                <p>
+                    The JavaScript Engine loads the script files, or code within the webpage document via "script" tags, and holds the actions of the 
+                    programmed code on standby. Once the Parsaring of HTML and CSS are complete, the waiting script is executed in 
+                    the order of what was first declared. These actions will directly update the DOM and then rendered onto the User's 
+                    Browser.
+                </p>
+
+            </div>
+            
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href="#jsuse"><button type="button">What is it used for?</button></a>
+        </div>
+    </section>
+
+    <!-- Information Section of the Page with section name and Id for easy linking -->
+    <section class="web-aspect__section" id="jsuse">
+        <div class="web-aspect__section-container">
+            <div class="header-container">
+                <h2>JavaScript Uses</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                        The uses of JavaScript extend to the full capabilties of other languages including questionable use for Malware and viruses.
+                        There are many capabilities which can be used with JavaScript.
+                </p>
+                <p>
+                    Some are as follows:
+                </p>
+                <ul>
+                    <li>Declare variables</li>
+                    <li>Store and retrieve values</li>
+                    <li>Define functions</li>
+                    <li>Invoke functions</li>
+                    <li>Define classes</li>
+                    <li>Load and use external modules</li>
+                    <li>Write event handlers that respond to user events</li>
+                </ul>
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href="#addinf"><button type="button">Additional Information</button></a>
+        </div>
+    </section>
+
+    <!-- Information Section of the Page with section name and Id for easy linking -->
+    <section class="additional__section" id="addinf">
+        <div class="additional__section-container">
+            <div class="header-container">
+                <h2>Additional Information</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                    JavaScript can be implemented into HTML documents or be externally loaded from it's own .js file.
+                    Script tags will be used to declare JavaScript within the HTML Document itself whereas an external .js file will need to be linked 
+                    appropriately.
+                    
+                    There are ways of loading JavaScript code dynamically and there are also whole frameworks dedicated to loading and running JavaScript 
+                    modules with proper dependencies resolved at run time.
+                </p>
+                <p>
+                    Information gathered from the following Website Sources; <a href="https://www.makeuseof.com/tag/what-is-javascript/">Make Use of</a> and <a href="https://www.w3schools.com/js/default.asp">w3schools</a>.
+                </p>
+
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+           <a href="#contact"><button type="button">Contact Us</button></a>
+        </div>
+    </section>
+
+    <!-- The Last Section of the Page Which features a Contact Form appearing on all pages barring the Gallery -->
+    <section class="contact__section" id="Contact">
+            <div class="contact__section-container">
+                <div class="header-container">
+                    <h2>Contact Us</h2>
+                </div>
+    
+                <div class="info-container">
+                    <p>
+                        If you would like more information or anything else, including suggestions for the website, please contact me with the form
+                        below
+                    </p>
+    
+                    <!-- The Form to send email to me via Desktop Email Client i.e. Outlook -->
+                    <form method="POST" action="mailto:381212@he.bedford.ac.uk">
+                        
+                        <!-- The Label of the "NAME" Text Box -->
+                        <label for="name">Name</label>
+    
+                        <!-- Textbox Placeholder and ID of the entered Name by User -->
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+    
+    
+                        <!-- The Label of the "EMAIL" Text Box -->
+                        <label for="email">Email</label>
+    
+                        <!-- Textbox Placeholder and ID of the entered Email by User -->
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+    
+    
+                        <!-- The Label of the "MESSAGE" Text Box -->
+                        <label for="message">Message</label>
+    
+                        <!-- Textbox Placeholder and ID of the entered Message by User -->
+                        <textarea id="message" name="message" placeholder="Your message"></textarea>
+                        
+                        <!-- Form Submission button which opens up Email Client and pre-loads the User's entered information into the Email's body -->
+                        <button type="submit" value="Submit">Submit</button>
+                    
+                    <!-- End of Form Section -->
+                    </form>
+    
+                </div>
+    
+            </div>
+    
+        </section>
+    
+        <!-- JavaScript Script Tag Section -->
+        <!-- Any remaining JavaScript is declared here as per standard practice -->
+        <script>
+                function IncreaseFont() {                                                                           //Declaring the Function name "IncreaseFont" to Increase the size of the Text
+                    document.body.style.fontSize = "xx-large";                                                      //Selects and edits the size of Text of the Entire Webpage's Body
+                }
+                function DecreaseFont() {                                                                           //Declaring the Function name "DecreaseFont" to reduce the size of the Text
+                    document.body.style.fontSize = "xx-small";                                                      //Selects and edits the size of Text of the Entire Webpage's Body
+                }
+                function ResetFont(){                                                                               //Declaring the Function name "ResetFont" to return the Text to normal
+                    document.body.style.fontSize = "medium";                                                        //Selects and edits the size of Text of the Entire Webpage's Body
+                }
+                function PagePrint() {                                                                              //Declaring the Function name "PagePrint" to Print out the Page
+                   window.print();                                                                                  //Snapshots and open default printer to print Entire Webpage
+                }
+        </script>
+                
+        <!-- Footer Section -->
+        <!-- Often used for Copyright or License information -->
+        <footer>
+            <div><small>2017 &copy; Designed by Collette White __</small></div>
+        </footer>
+    
+            <!-- Back to Top -->
+            <!-- Allows the user to return to the top of the Page using the Arrow on the bottom right of the Page -->
+            <a class="back-to-top" href="#home">
+                 &#8593;
+            </a>
+        </body>
+    </html>

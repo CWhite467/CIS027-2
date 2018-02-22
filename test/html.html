@@ -1,0 +1,303 @@
+<!-- Hand Coded by Collette White 381212 [1620014] -->
+<!-- Web Development 2017-2018 Ruth Tippel -->
+
+<!-- The HTML HTML Document for the Website-->
+
+<!-- Declaration of Document Type -->
+<!DOCTYPE html>
+<!-- Declaration of Default Language -->
+<html lang="en">
+
+<!-- Top Head Section of the Page -->
+<head>
+
+    <!-- Meta Values for Viewport Adaptability and Browser Refresh -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Window/Pages title seen at top of the Window -->
+    <title>Collette White [381212] Web Design - W3 Standards</title>
+    
+    <!-- Linked CSS Style sheet for this specific Page -->
+    <link rel="stylesheet" href="css/htmlstyle.css" type="text/css">
+
+    <!-- Accessibility options, top right of Page, also scripted to act on Click in JavaScript -->
+    <!-- The Script tags for these options can be found lower down the page -->
+    <p style="text-align:right">Accessibility Options:   
+        <button onclick="IncreaseFont()"> T+ </button>
+        <button onclick = "ResetFont()"> Tt </button>
+        <button onclick="DecreaseFont()"> T- </button>
+        <button onclick="PrintPage()"> Print </button>
+    </p>
+</head>
+
+<!-- Main body Section of the Page -->
+<body>
+    
+    <!-- Navigation Menu and it's Items with Links -->
+    <nav class="navigation sticky-bottom">
+        <ul>
+            <li>
+                <a href="..\test\index.html">Home</a>
+            </li>   
+            <li>
+                <a href="..\test\webstandards.html">Webstandards</a>
+            </li>
+            <li>
+                <a href="..\test\html.html">HTML Coding</a>
+            </li>
+            <li>
+                <a href="..\test\css.html">CSS</a>
+            </li>
+            <li>
+                <a href="..\test\java.html">JavaScript</a>
+            </li>
+            <li>
+                <a href="..\test\Gallery.html">Script Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Information Section of the Page with section name and Id for easy linking -->
+    <section class="web-standard__section" id="home">
+        <div class="web-standard__section-container">
+            <div class="header-container">
+                <h2>HTML</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                    HTML stands for Hypertext Mark-up Language, it was invented by Tim Berners-Lee 
+                    in 1991. Tim Berners-Lee is also the inventor of the world wide web (www) in 1989, 
+                    developed on the lanuage which became the pinnicle of how web sites are developed today.
+                </p>
+
+                <p>
+                   www Browsers use HTML's set of markup symbols or codes to interpret how the items 
+                   which make up the website are visually displayed on the screen. These 'Codes' and 
+                   'markup text' are often refferd to by the developer in HTML as 'Tags'. These elements 
+                   are often divided into a start tag and '/' end tag such as "< p >< /p >" for paragraphs and 
+                   "< a >< /a >" for links (without spaces). 
+                </p>
+
+                <p>
+                    Formally Recommended by the <a href= "..\test\webstandards.html">W3C</a>, HTML has expanded 
+                    and adapted through the years to incorporate new functions and improve usability. There are 
+                    many different versions of HTML which have progressively changed the way websites are navigated, 
+                    viewed and behave.
+                </p>
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href= "#HTMLplus"><button type="button">HTML+</button></a>
+        </div>
+    </section>
+
+    <!-- Information Section of the Page with section name and Id for easy linking -->
+    <section class="w3-consort__section" id="HTMLplus">
+        <div class="w3-consort__section-container">
+            <div class="header-container">
+                <h2>HTML+</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                    In 1993, Dave Raggett drafted the superset of HTML which allowed designs to encompass features such as tables, 
+                    figures and forms. It was gradually rolled out to improve the earlier formatting of HTML. HTML+ also introduced 
+                    navigation menus and dividers to break down Large Documents to help reduce latency.
+                </p>
+
+                <p>
+                    HTML+ was heavily influenced by the international standard of document markup at the time, the Standard 
+                    Generalized Markup Language (SGML). SGML, defined by ISO 8879, markup structure help define document 
+                    classes by the SGML Document Type Definition (DTD).
+                </p>
+
+                <p>
+                    HTML+, unlike SGML, does not attempt to define each possible user but instead defines support for a very 
+                    wide range of display types. HTML+ aids in keeping browser software as simple - limiting the complexity 
+                    that can be handled. 
+                </p>
+
+                <p>
+                    HTML+ favors the user defined settings of the browser to impact the formatting of the webpage. Browsers 
+                    can avoid problems with page sizes and missing fonts. HTML+ conserves indispensable differences that are often 
+                    lost by lower level procedural formats, making it easier to carry out processes like indexing and convertion 
+                    into other document formats.
+                </p>
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href ="#HTML2n3"><button type="button">HTML 2 and 3</button></a>
+        </div>
+    </section>
+
+    <!-- Information Section of the Page with section name and Id for easy linking -->
+    <section class="web-validate__section" id="HTML2n3">
+        <div class="web-validate__section-container">
+            <div class="header-container">
+                <h2>HTML 2-3</h2>
+            </div>
+
+            <div class="info-container">
+                <p>The versions of HTML which followed where simple revision or adaptions, including new tags to help format the document or enable new 
+                    images, tables or equations to be formed and displayed on the website.
+                </p>
+                <p>HTML 2 - Developed by Tim Burners-Lee in September 22nd 1995 which featured improvements and conformance to various requirements</p>
+                <p>HTML 3 - (The evolution of HTML+) a Backwards compatible version of HTML drafted in March 1995 introducing tables, complex Maths, complex text-wrapping and formatting, subclass elements, paragraphs and support for non-graphical clients.
+                <p>Further upgrades were also awarded a new version of HTML such as 3.0, 4.0 and 5.</p>
+                <p>
+                   An quick overview of the HTML Version and Differences;
+                </p>
+                <ul>
+                    <li> HTML v1 - Linked Documents</li>
+                    <li> HTML v2 - Linked Documents with Stylised text and tables</li>
+                    <li> HTML v3 - Linked Documents with Stylised text and tables with some Browser Specific Features</li>
+                    <li> HTML v4 - Re-evaluated Linked Documents with Stylised text and tables with some Browser Specific Features whilst removing clutter</li>
+                    <li> HTML v5 - Linked Documents with the ability to specify Document Structures and multimedia elements such as CSS/JS</li>
+                </ul>
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href ="#HTML4XML"><button type="button">HTML 4 and XML</button></a>
+        </div>
+    </section>
+
+    <!-- Information Section of the Page with section name and Id for easy linking -->
+    <section class="web-aspect__section" id="HTML4XML">
+        <div class="web-aspect__section-container">
+            <div class="header-container">
+                <h2>HTML 4 and XML = XHTML</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                    HTML 4, published in 1999, was the first version of HTML document building which introduced the use of Cascading Style Sheets (CSS) 
+                    as part of the HTML standard. HTML 4 is reliant on css documents for formating and display of the website providing 
+                    prestine control of any information the page is hosting. As browsers improved to host HTML4 websites
+                </p>
+
+                <p>
+                    XHTML, published in 2000, is output from certain Extensible Markup Language (XML) files, which use standard ASCII text, and mirrors or 
+                    extends HTML versions with strict syntax rules, requiring perfect syntax to even run the XHTML, but it also allows developers to create their own objects and tags for each 
+                    page in development. Introduces a uniform appearance to developed pages acoos a range of different browsers.
+                </p>
+            </div>
+            
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href ="#HTML5"><button type="button">HTML5</button></a>
+        </div>
+    </section>
+
+    <!-- Information Section of the Page with section name and Id for easy linking -->
+    <section class="additional__section" id="HTML5">
+        <div class="additional__section-container">
+            <div class="header-container">
+                <h2>HTML5</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                    Development started for HTML's 5th Version of standards in 2007 with the official standard being released by W3C in 
+                    October 2014. HTML5 become popular and dominant in webpage development by 2010, cooly taking over the XHTML standard 
+                    and the old news of HTML 4. HTML5 introduce a slueth of new Tags and elements to help define document format and structure 
+                    such as header, footer, audio, video, navigation tags, article, section etc. These tags opened up the possibility of styling elements 
+                    using CSS within the element rather then having to selectively style the entire page.
+                </p>
+                <p>
+                    HTML5 relies heaviliy on additional scripts such as CSS and JavaScript for interactions, styling and any animations on 
+                    the webpage. Though this version is easily the most interactive and adaptable when the webpage is developed using the 
+                    combination of this HTML version, CSS and JavaScript/JQuery.
+                </p>
+
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href ="#contact"><button type="button">Contact Us</button></a>
+        </div>
+    </section>
+
+        <!-- The Last Section of the Page Which features a Contact Form appearing on all pages barring the Gallery -->
+        <section class="contact__section" id="Contact">
+                <div class="contact__section-container">
+                    <div class="header-container">
+                        <h2>Contact Us</h2>
+                    </div>
+        
+                    <div class="info-container">
+                        <p>
+                            If you would like more information or anything else, including suggestions for the website, please contact me with the form
+                            below
+                        </p>
+        
+                        <!-- The Form to send email to me via Desktop Email Client i.e. Outlook -->
+                        <form method="POST" action="mailto:381212@he.bedford.ac.uk">
+                            
+                            <!-- The Label of the "NAME" Text Box -->
+                            <label for="name">Name</label>
+        
+                            <!-- Textbox Placeholder and ID of the entered Name by User -->
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+        
+        
+                            <!-- The Label of the "EMAIL" Text Box -->
+                            <label for="email">Email</label>
+        
+                            <!-- Textbox Placeholder and ID of the entered Email by User -->
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+        
+        
+                            <!-- The Label of the "MESSAGE" Text Box -->
+                            <label for="message">Message</label>
+        
+                            <!-- Textbox Placeholder and ID of the entered Message by User -->
+                            <textarea id="message" name="message" placeholder="Your message"></textarea>
+                            
+                            <!-- Form Submission button which opens up Email Client and pre-loads the User's entered information into the Email's body -->
+                            <button type="submit" value="Submit">Submit</button>
+                        
+                        <!-- End of Form Section -->
+                        </form>
+        
+                    </div>
+        
+                </div>
+        
+            </section>
+        
+            <!-- JavaScript Script Tag Section -->
+            <!-- Any remaining JavaScript is declared here as per standard practice -->
+            <script>
+                    function IncreaseFont() {                                                                           //Declaring the Function name "IncreaseFont" to Increase the size of the Text
+                        document.body.style.fontSize = "xx-large";                                                      //Selects and edits the size of Text of the Entire Webpage's Body
+                    }
+                    function DecreaseFont() {                                                                           //Declaring the Function name "DecreaseFont" to reduce the size of the Text
+                        document.body.style.fontSize = "xx-small";                                                      //Selects and edits the size of Text of the Entire Webpage's Body
+                    }
+                    function ResetFont(){                                                                               //Declaring the Function name "ResetFont" to return the Text to normal
+                        document.body.style.fontSize = "medium";                                                        //Selects and edits the size of Text of the Entire Webpage's Body
+                    }
+                    function PagePrint() {                                                                              //Declaring the Function name "PagePrint" to Print out the Page
+                       window.print();                                                                                  //Snapshots and open default printer to print Entire Webpage
+                    }
+            </script>
+                    
+            <!-- Footer Section -->
+            <!-- Often used for Copyright or License information -->
+            <footer>
+                <div><small>2017 &copy; Designed by Collette White __</small></div>
+            </footer>
+        
+                <!-- Back to Top -->
+                <!-- Allows the user to return to the top of the Page using the Arrow on the bottom right of the Page -->
+                <a class="back-to-top" href="#home">
+                     &#8593;
+                </a>
+            </body>
+        </html>

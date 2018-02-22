@@ -1,0 +1,316 @@
+<!-- Hand Coded by Collette White 381212 [1620014] -->
+<!-- Web Development 2017-2018 Ruth Tippel -->
+
+<!-- The WebStandards HTML Document for the Website-->
+
+<!-- Declaration of Document Type -->
+<!DOCTYPE html>
+<!-- Declaration of Default Language -->
+<html lang="en">
+
+<!-- Top Head Section of the Page -->
+<head>
+
+    <!-- Meta Values for Viewport Adaptability and Browser Refresh -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Window/Pages title seen at top of the Window -->
+    <title>Collette White [381212] Web Design - W3 Standards</title>
+    
+    <!-- Linked CSS Style sheet for this specific Page -->
+    <link rel="stylesheet" href="css/wsstyle.css" type="text/css">
+
+    <!-- Accessibility options, top right of Page, also scripted to act on Click in JavaScript -->
+    <!-- The Script tags for these options can be found lower down the page -->
+    <p style="text-align:right">Accessibility Options:   
+        <button title="Increase WebPage Text Size" onclick="IncreaseFont()"> T+ </button>
+        <button title="Reset WebPage Text Size" onclick = "ResetFont()"> Tt </button>
+        <button title="Decrease WebPage Text Size" onclick="DecreaseFont()"> T- </button>
+        <button title="Print out WebPage" onclick="PrintPage()"> Print </button>
+    </p>
+</head>
+
+<!-- Main body Section of the Page -->
+<body>
+    
+    <!-- Navigation Menu and it's Items with Links -->
+    <nav class="navigation sticky-bottom">
+            <ul>
+                    <li>
+                        <a href="..\test\index.html">Home</a>
+                    </li>   
+                    <li>
+                        <a href="..\test\webstandards.html">Webstandards</a>
+                    </li>
+                    <li>
+                        <a href="..\test\html.html">HTML Coding</a>
+                    </li>
+                    <li>
+                        <a href="..\test\css.html">CSS</a>
+                    </li>
+                    <li>
+                        <a href="..\test\java.html">JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="..\test\Gallery.html">Script Gallery</a>
+                    </li>
+                </ul>    
+    </nav>
+
+    <!-- The First Information Section of the Page with section name and Id for easy linking -->
+    <section class="web-standard__section" id="home">
+
+        <!-- Each Section is divided into two or three divs (title, image and Info) for formatting and visual purposes -->
+        <!-- Main divider -->
+        <div class="web-standard__section-container">
+    
+            <!-- Title divider -->
+            <div class="header-container">
+                <h2>Web Standards</h2>  
+            </div>
+    
+            <!-- Image, Information and Text divider -->
+            <div class="info-container">
+                <p>
+                    Web Standards are a series of recommendations which outline the expectations and compatibility of a website. These Web standards
+                    allow for developers to ensure their website or web platform is accessible, reliable and universally
+                    navigable without the risks to the user’s privacy and security being placed at risk (World Wide Web Consortium
+                    (W3C), 2006).
+                </p>
+
+                <p>
+                    These standards are defined through a series of decisions made within the consortium, which is made of several member groups
+                    of the organisation, with recommendations only being approved via a consensus. The consensus is usually
+                    reached after sufficient experimentations and research into the proposed recommendation which was submitted.
+                </p>
+
+                <p>
+                    As the Modern use of the Web is evolving, so must the standards. By future proofing one’s website, a developer increases
+                    the likelihood of recognition and customer usability. These standards help improve the overall feel,
+                    security and execution of the website’s purpose.
+                </p>
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href="#w3cons"><button type="button">Who are the W3 Consortium?</button></a>
+        </div>
+    </section>
+
+    <!-- The Second Information Section of the Page with section name and Id for easy linking -->
+    <section class="w3-consort__section" id="w3cons">
+
+        <!-- Each Section is divided into two or three divs (title, image and Info) for formatting and visual purposes -->
+        <!-- Main divider -->
+        <div class="w3-consort__section-container">
+    
+            <!-- Title divider -->
+            <div class="header-container">
+                <h2>W3 Consortium</h2>
+            </div>
+
+            <!-- Image, Information and Text divider -->
+            <div class="info-container">
+                <p>
+                    Web Standards are a series of recommendations which outline the expectations and compatibility of a website. These Web standards
+                    allow for developers to ensure their website or web platform is accessible, reliable and universally
+                    navigable without the risks to the user’s privacy and security being placed at risk (World Wide Web Consortium
+                    (W3C), 2006).
+                </p>
+
+                <p>
+                    These standards are defined through a series of decisions made within the consortium, which is made of several member groups
+                    of the organisation, with recommendations only being approved via a consensus. The consensus is usually
+                    reached after sufficient experimentations and research into the proposed recommendation which was submitted.
+                </p>
+
+                <p>
+                    As the Modern use of the Web is evolving, so must the standards. By future proofing one’s website, a developer increases
+                    the likelihood of recognition and customer usability. These standards help improve the overall feel,
+                    security and execution of the website’s purpose.
+                </p>
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href="#WebValid"><button type="button">Website Validation?</button></a>
+        </div>
+    </section>
+
+    <!-- The Third Information Section of the Page with section name and Id for easy linking -->
+    <section class="web-validate__section" id="WebValid">
+
+        <!-- Each Section is divided into two or three divs (title, image and Info) for formatting and visual purposes -->
+        <!-- Main divider -->
+        <div class="web-validate__section-container">
+            <div class="header-container">
+                <h2>Validate a Website</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                    Validation is encouraged among developers as it can be used to debug, maintain and keep in line with good practices thus
+                    improving the future use of the platform. As explained in the W3C Validation webpage (World Wide Web
+                    Consortium (W3C), 2012), simply designing a webpage which is presented pleasantly on a personal choice
+                    browser could cause.
+                </p>
+                <p>
+                    Compatibility issues can occur on browsers or individual components of the webpage which may cause crashing or limit the users 
+                    security. These compatibility errors can be resolved by following the Standards defined by W3C, thus increasing the trust of the website.
+                </p>
+
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href="#WebAspect"><button type="button">Aspects of the Web</button></a>
+        </div>
+    </section>
+
+    <!-- The Forth Information Section of the Page with section name and Id for easy linking -->
+    <section class="web-aspect__section" id="WebAspect">
+
+        <!-- Each Section is divided into two or three divs (title, image and Info) for formatting and visual purposes -->
+        <!-- Main divider -->
+        <div class="web-aspect__section-container">
+            <div class="header-container">
+                <h2>Web Aspects</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                    The W3C detail different aspects of modern websites which are improved by simply following their standards, especially with
+                    the addition of more interactive and automated systems integrated into the Web platform. According to
+                    (World Wide Web Consortium (W3C), 2005) there are seven main points in which the W3C standards which
+                    improve website experiences when the developer conforms to.
+                </p>
+
+                <p>
+                    Some are as follows:
+                </p>
+                <ul>
+                    <li>Interoperability</li>
+                    <li>Semantic Web</li>
+                    <li>Universal Access</li>
+                    <li>Decentralisation</li>
+                    <li>Evolution</li>
+                    <li>Trust</li>
+                </ul>
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href = "#AddSec"><button type="button">Additional Information</button></a>
+        </div>
+    </section>
+
+    <!-- The Fifth Information Section of the Page with section name and Id for easy linking -->    
+    <section class="additional__section" id="AddSec">
+
+        <!-- Each Section is divided into two or three divs (title, image and Info) for formatting and visual purposes -->
+        <!-- Main divider -->
+        <div class="additional__section-container">
+            <div class="header-container">
+                <h2>Additional Information</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                    Validation is encouraged among developers as it can be used to debug, maintain and keep in line with good practices thus
+                    improving the future use of the platform. As explained in the W3C Validation webpage (World Wide Web
+                    Consortium (W3C), 2012), simply designing a webpage which is presented pleasantly on a personal choice
+                    browser could cause.
+                </p>
+                <p>
+                    issues on other browsers and components of the webpage may crash or have reduced security due to compatibility. By following
+                    the Standards defined by W3C, the compatibility errors are resolved and the trust of the website is increased.
+                </p>
+
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href ="#contact"><button type="button">Contact Us</button></a>
+        </div>
+    </section>
+
+     <!-- The Last Section of the Page Which features a Contact Form appearing on all pages barring the Gallery -->
+     <section class="contact__section" id="Contact">
+        <div class="contact__section-container">
+            <div class="header-container">
+                <h2>Contact Us</h2>
+            </div>
+    
+            <div class="info-container">
+                <p>
+                    If you would like more information or anything else, including suggestions for the website, please contact me with the form
+                    below
+                </p>
+    
+                    <!-- The Form to send email to me via Desktop Email Client i.e. Outlook -->
+                    <form method="POST" action="mailto:381212@he.bedford.ac.uk">
+                        
+                    <!-- The Label of the "NAME" Text Box -->
+                    <label for="name">Name</label>
+    
+                    <!-- Textbox Placeholder and ID of the entered Name by User -->
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+    
+    
+                    <!-- The Label of the "EMAIL" Text Box -->
+                    <label for="email">Email</label>
+    
+                    <!-- Textbox Placeholder and ID of the entered Email by User -->
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+    
+    
+                    <!-- The Label of the "MESSAGE" Text Box -->
+                    <label for="message">Message</label>
+    
+                    <!-- Textbox Placeholder and ID of the entered Message by User -->
+                    <textarea id="message" name="message" placeholder="Your message"></textarea>
+                        
+                    <!-- Form Submission button which opens up Email Client and pre-loads the User's entered information into the Email's body -->
+                    <button type="submit" value="Submit">Submit</button>
+                    
+                <!-- End of Form Section -->
+                </form>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- JavaScript Script Tag Section -->
+    <!-- Any remaining JavaScript is declared here as per standard practice -->
+    <script>
+            function IncreaseFont() {                                                                           //Declaring the Function name "IncreaseFont" to Increase the size of the Text
+                document.body.style.fontSize = "xx-large";                                                      //Selects and edits the size of Text of the Entire Webpage's Body
+            }
+            function DecreaseFont() {                                                                           //Declaring the Function name "DecreaseFont" to reduce the size of the Text
+                document.body.style.fontSize = "xx-small";                                                      //Selects and edits the size of Text of the Entire Webpage's Body
+            }
+            function ResetFont(){                                                                               //Declaring the Function name "ResetFont" to return the Text to normal
+                document.body.style.fontSize = "medium";                                                        //Selects and edits the size of Text of the Entire Webpage's Body
+            }
+            function PagePrint() {                                                                              //Declaring the Function name "PagePrint" to Print out the Page
+                window.print();                                                                                  //Snapshots and open default printer to print Entire Webpage
+            }
+    </script>
+                
+    <!-- Footer Section -->
+    <!-- Often used for Copyright or License information -->
+    <footer>
+        <div><small>2017 &copy; Designed by Collette White __</small></div>
+    </footer>
+    
+        <!-- Back to Top -->
+        <!-- Allows the user to return to the top of the Page using the Arrow on the bottom right of the Page -->
+        <a class="back-to-top" href="#home">
+             &#8593;
+        </a>
+    </body>
+</html>

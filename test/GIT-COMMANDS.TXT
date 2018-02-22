@@ -1,0 +1,18 @@
+1. save changes
+2. click source control (CTRL+SHIFT+G) (fork under the search button)
+3. put in commit message (hit the + button on the file you have changed, and input message), click the tick
+4. open terminal (CTRL + ')
+5. type in: git push origin master
+6. check your repository on GitHub to see if changes are made.
+
+----------------------------------------------------
+
+New projects:
+
+open terminal (CTRL + ')
+git init
+git commit -m "first commit"
+git remote add origin <github repository link.git>
+git push -u origin master
+
+

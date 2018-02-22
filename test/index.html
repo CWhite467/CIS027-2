@@ -1,0 +1,343 @@
+<!-- Hand Coded by Collette White 381212 [1620014] -->
+<!-- Web Development 2017-2018 Ruth Tippel -->
+
+<!-- The Main HTML Document or Landing Page for the Website-->
+
+<!-- Declaration of Document Type -->
+<!DOCTYPE html>                                                                                        
+<!-- Declaration of Default Language -->
+<html lang="en">                         
+
+<!-- Top Head Section of the Page -->
+<head>                            
+
+    <!-- Meta Values for Viewport Adaptability and Browser Refresh -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Window/Pages title seen at top of the Window -->
+    <title>Collette White [381212] Web Design - W3 Standards</title>
+    
+    <!-- Linked CSS Style sheet for this specific Page -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- JavaScript tags for detailin the vistor counter to the website -->
+    <!-- This was Placed here to appear at the top of the page alongside the Accessibility bar -->
+    <script>
+        function pageview() {                                                                           //Declaring the function name to be called
+            var decrease_increase=50000                                                                 //Declaring the Variable "decrease_increase" to increment the page counter by 1
+            var counterdate=new Date()                                                                  //Declaration of the Date Variable and it's setting as a new date to record from
+            var currenthits=counterdate.getTime().toString()                                            //Declaring the variable of the printout, converting the previously defined Variables into a String
+            currenthits=parseInt(                                                                       //Further breakdown of the printout detailing it as a Parse Interger which is calculated when the page is parsed
+                currenthits.substring(                                                                  //Details on the how the counter calculated the current hit number
+                    2,currenthits.length-4
+                    )
+                    )
+                +decrease_increase
+            document.write("You are visitor # <b>"+currenthits+"</b> to my site!")                      //The final Printout will appear as such with "currenthits" detailing the counter value
+        }
+        pageview()
+    </script>
+
+    <!-- Accessibility options, top right of Page, also scripted to act on Click in JavaScript -->
+    <!-- The Script tags for these options can be found lower down the page -->
+    <p style="text-align:right">Accessibility Options:   
+        <button title="Increase WebPage Text Size" onclick="IncreaseFont()"> T+ </button>
+        <button title="Reset WebPage Text Size" onclick = "ResetFont()"> Tt </button>
+        <button title="Decrease WebPage Text Size" onclick="DecreaseFont()"> T- </button>
+        <button title="Print out WebPage" onclick="PrintPage()"> Print </button>
+    </p>
+
+<!-- End of Top Head Section of the Page -->
+</head>
+
+<!-- Main body Section of the Page -->
+<body>
+
+    <!-- Navigation Menu and it's Items with Links -->
+    <nav class="navigation sticky-bottom">
+        <ul>
+            <li>
+                <a href="..\test\index.html">Home</a>
+            </li>   
+            <li>
+                <a href="..\test\webstandards.html">Webstandards</a>
+            </li>
+            <li>
+                <a href="..\test\html.html">HTML Coding</a>
+            </li>
+            <li>
+                <a href="..\test\css.html">CSS</a>
+            </li>
+            <li>
+                <a href="..\test\java.html">JavaScript</a>
+            </li>
+            <li>
+                <a href="..\test\Gallery.html">Script Gallery</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- The First Information Section of the Page with section name and Id for easy linking -->
+    <section class="web-standard__section" id="home">
+
+        <!-- Each Section is divided into two or three divs (title, image and Info) for formatting and visual purposes -->
+        <!-- Main divider -->
+        <div class="web-standard__section-container">
+
+            <!-- Title divider -->
+            <div class="header-container">
+                <h2>Welcome</h2>
+            
+            <!-- End of Title divider -->       
+            </div>
+
+            <!-- Image, Information and Text divider -->
+            <div class="info-container">
+                <p>
+                    This website was built for the purpose of CIS027-2 Web Development unit as part of the Second year of Foundation Degree of Science
+                     in the specialisation of IT Networking and Security 2016-2018 at Bedford College.
+                </p>
+
+                <p>
+                    This website was created by Collette White for submission in January 2018 to Ruth Tippel.
+                </p>
+
+            <!-- End of Text divider -->    
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href ="#Scope"><button type="button">The Scope</button></a>
+        
+        <!-- End of Main divider -->    
+        </div>
+
+    <!-- End of First Section -->     
+    </section>
+
+
+    <!-- The Second Information Section of the Page with section name and Id for easy linking -->
+    <section class="w3-consort__section" id="Scope">
+        
+        <!-- Each Section is divided into two or three divs (title, image and Info) for formatting and visual purposes -->
+        <!-- Main divider -->
+        <div class="w3-consort__section-container">
+            
+            <!-- Title divider -->
+            <div class="header-container">
+                <h2>Website Scope</h2>
+            
+            <!-- End of Title divider -->       
+            </div>
+    
+            <!-- Image, Information and Text divider -->
+            <div class="info-container">
+                <p>
+                    The Scope of the website is to host a variety of information regarding w3 Standards, the w3 consortium themselves and the 
+                    Organisations involved. Pages of the website should navigable by links to access information on Transitional, Frameset and 
+                    Strict form of Languages used in website development including but not limited to HTML5, HTML, xHTML, CSS Levels and XML. 
+                    
+                </p>
+
+                <p>
+                    Further discussion on the reasons for the implementation of standards as well as details on the introduction to such standards through 
+                    recommendation and Request for Comments.    
+                </p>
+
+            <!-- End of Text divider -->    
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href="#Design"><button type="button">The Design</button></a>
+
+        <!-- End of Main divider -->    
+        </div>
+
+    <!-- End of Second Section -->     
+    </section>
+
+    <!-- The Third Information Section of the Page with section name and Id for easy linking -->
+    <section class="web-validate__section" id="Design">
+        
+        <!-- Each Section is divided into two or three divs (title, image and Info) for formatting and visual purposes -->
+        <!-- Main divider -->
+        <div class="web-validate__section-container">
+            
+            <!-- Title divider -->
+            <div class="header-container">
+                <h2>Website Designs</h2>
+            </div>
+    
+            <!-- Image, Information and Text divider -->
+            <div class="info-container">
+               
+                    <A href="..\test\img\gallery\design01.jpg" target="blank"><img src="..\test\img\gallery\design01.jpg" alt="1st Design idea" title="First Design Idea" style="width:128px;height:128px;"></a>
+
+                    <A href="..\test\img\gallery\design02.jpg" target="blank"><img src="..\test\img\gallery\design02.jpg" alt="2nd Design idea" title="Second Design Idea" style="width:128px;height:128px;"></A>
+
+                    <A href="..\test\img\gallery\design03.jpg" target="blank"><img src="..\test\img\gallery\design03.jpg" alt="3rd Chosen Design idea" title="Third Design Idea" style="width:128px;height:128px;"></A>
+                    <br>
+
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href = "#Specs"><button type="button">Aspects of the Web</button></a>
+        </div>
+    </section>
+
+    <!-- The Forth Information Section of the Page with section name and ID for easy linking -->
+    <section class="web-aspect__section" id="Specs">
+        
+        <!-- Each Section is divided into two or three divs (title, image and Info) for formatting and visual purposes -->
+        <!-- Main divider -->
+        <div class="web-aspect__section-container">
+            
+            <!-- Title divider -->
+            <div class="header-container">
+                <h2>Web Specifics</h2>
+            </div>
+    
+            <!-- Image, Information and Text divider -->
+            <div class="info-container">
+                <p>
+                    The minimum requirements for this website are as follows:
+                </p>
+
+                <!-- An Unordered List or Bulletpoints with a list of each individual List Item -->
+                <ul>
+                    <li>4 or more pages</li>
+                    <li>Navigation via Internal/External URL links or buttons</li>
+                    <li>Accessibility Options (following Web Content Accessibility Guidelines (WCAG) 2.0)</li>
+                    <li>Cross-Compatibility on browsers and devices</li>
+                    <li>Features such as mouse over, forms, formatting, colour schemes and pictures</li>                  
+                </ul>
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href = "#AssInf"><button type="button">Assignment Information</button></a>
+        </div>
+    </section>
+
+    <!-- The Forth Information Section of the Page with section name and ID for easy linking -->
+    <section class="additional__section" id = "AssInf">
+        
+        <!-- Each Section is divided into two or three divs (title, image and Info) for formatting and visual purposes -->
+        <!-- Main divider -->
+        <div class="additional__section-container">
+            
+            <!-- Title divider -->
+            <div class="header-container">
+                <h2>Assignment Information</h2>
+            </div>
+    
+            <!-- Image, Information and Text divider -->
+            <div class="info-container">
+                <p>
+                    To document your website you should include a report containing the following:                
+                </p>
+
+                <!-- An Unordered List or Bulletpoints with a list of each individual List Item -->
+                <ul>
+                    <li>A short description of your website</li>
+                    <li>A list of features used in your website</li>
+                    <li>Evidence of validation against HTML 4.01 /5 and CSS 2.0/3.0  specifications (screen prints)</li>
+                    <li>Printouts of HTML pages (with comments explaining the code)</li>
+                    <li>Printout of the cascading style sheet (CSS) page(s) with comments explaining the code</li>
+                    <li>Printout of any JavaScript code used in your site (if applicable) with comments explaining the code</li>
+                    <li>Evidence of testing on a range of platforms</li>
+                    <li>A discussion of any difference in appearance and functionality of your site when viewed in different browsers (screen prints required)</li>
+                    <li>Evidence of testing for accessibility</li>                 
+                </ul>
+                <br>
+
+            </div>
+
+            <!-- Quick Access button to next Section which Snaps to the Next Section of Information -->
+            <!-- This button is points to the ID name of the Section i.e. "#home" -->
+            <a href = "#Contact"><button type="button">contact us</button></a>
+        </div>
+    </section>
+
+    <!-- The Last Section of the Page Which features a Contact Form appearing on all pages barring the Gallery -->
+    <section class="contact__section" id="Contact">
+        <div class="contact__section-container">
+            <div class="header-container">
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="info-container">
+                <p>
+                    If you would like more information or anything else, including suggestions for the website, please contact me with the form
+                    below
+                </p>
+
+                <!-- The Form to send email to me via Desktop Email Client i.e. Outlook -->
+                <form method="POST" action="mailto:381212@he.bedford.ac.uk">
+                    
+                    <!-- The Label of the "NAME" Text Box -->
+                    <label for="name">Name</label>
+
+                    <!-- Textbox Placeholder and ID of the entered Name by User -->
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+
+
+                    <!-- The Label of the "EMAIL" Text Box -->
+                    <label for="email">Email</label>
+
+                    <!-- Textbox Placeholder and ID of the entered Email by User -->
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+
+                    <!-- The Label of the "MESSAGE" Text Box -->
+                    <label for="message">Message</label>
+
+                    <!-- Textbox Placeholder and ID of the entered Message by User -->
+                    <textarea id="message" name="message" placeholder="Your message"></textarea>
+                    
+                    <!-- Form Submission button which opens up Email Client and pre-loads the User's entered information into the Email's body -->
+                    <button type="submit" value="Submit">Submit</button>
+                
+                <!-- End of Form Section -->
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JavaScript Script Tag Section -->
+    <!-- Any remaining JavaScript is declared here as per standard practice -->
+    <script>
+            function IncreaseFont() {                                                                           //Declaring the Function name "IncreaseFont" to Increase the size of the Text
+                document.body.style.fontSize = "xx-large";                                                      //Selects and edits the size of Text of the Entire Webpage's Body
+            }
+            function DecreaseFont() {                                                                           //Declaring the Function name "DecreaseFont" to reduce the size of the Text
+                document.body.style.fontSize = "xx-small";                                                      //Selects and edits the size of Text of the Entire Webpage's Body
+            }
+            function ResetFont(){                                                                               //Declaring the Function name "ResetFont" to return the Text to normal
+                document.body.style.fontSize = "medium";                                                        //Selects and edits the size of Text of the Entire Webpage's Body
+            }
+            function PagePrint() {                                                                              //Declaring the Function name "PagePrint" to Print out the Page
+               window.print();                                                                                  //Snapshots and open default printer to print Entire Webpage
+            }
+    </script>
+            
+    <!-- Footer Section -->
+    <!-- Often used for Copyright or License information -->
+    <footer>
+        <div><small>2017 &copy; Designed by Collette White __</small></div>
+    </footer>
+
+        <!-- Back to Top -->
+        <!-- Allows the user to return to the top of the Page using the Arrow on the bottom right of the Page -->
+        <a class="back-to-top" href="#home">
+             &#8593;
+        </a>
+    </body>
+</html>
